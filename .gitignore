@@ -1,0 +1,13 @@
+.cache
+.idea
+.local/share
+.pythonlibs
+.upm
+venv
+.env
+.gitattributes
+.replit
+img.png
+poetry.lock
+pyproject.toml
+replit_zip_error_log.txt
