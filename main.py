@@ -11,7 +11,7 @@ def is_shorten_link(url):
     return parsed_url.netloc == "vk.cc"
 
 
-def createParser():
+def create_parser():
     parser = argparse.ArgumentParser(
         description='Описание что делает программа'
     )
@@ -56,7 +56,7 @@ def shorten_link(token, url, vk_user_id):
 
 
 if __name__ == "__main__":
-    url = createParser()
+    url = create_parser()
     load_dotenv()
     vk_token = os.getenv("VK_API_KEY")
     vk_user_id = os.getenv("VK_USER_ID")
