@@ -58,8 +58,8 @@ def shorten_link(token, url, vk_user_id):
 if __name__ == "__main__":
     url = create_parser()
     load_dotenv()
-    vk_token = os.getenv("VK_API_KEY")
-    vk_user_id = os.getenv("VK_USER_ID")
+    vk_token = os.environ["VK_API_KEY"]
+    vk_user_id = os.environ["VK_USER_ID"]
     try:
         user_input = url
         if is_shorten_link(user_input):
